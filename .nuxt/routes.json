@@ -1,0 +1,30 @@
+[
+  {
+    "name": "details",
+    "path": "/details",
+    "component": "C:\\\\Ecole\\\\JS\\\\TPNOTE\\\\NUXT_TP\\\\pages\\\\details.vue",
+    "chunkName": "pages/details",
+    "_name": "_066d8a4c"
+  },
+  {
+    "name": "favoris",
+    "path": "/favoris",
+    "component": "C:\\\\Ecole\\\\JS\\\\TPNOTE\\\\NUXT_TP\\\\pages\\\\favoris.vue",
+    "chunkName": "pages/favoris",
+    "_name": "_033fb980"
+  },
+  {
+    "name": "listeAstre",
+    "path": "/listeAstre",
+    "component": "C:\\\\Ecole\\\\JS\\\\TPNOTE\\\\NUXT_TP\\\\pages\\\\listeAstre.vue",
+    "chunkName": "pages/listeAstre",
+    "_name": "_fbc544f4"
+  },
+  {
+    "name": "index",
+    "path": "/",
+    "component": "C:\\\\Ecole\\\\JS\\\\TPNOTE\\\\NUXT_TP\\\\pages\\\\index.vue",
+    "chunkName": "pages/index",
+    "_name": "_0a43696a"
+  }
+]
