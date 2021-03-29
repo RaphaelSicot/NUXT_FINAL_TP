@@ -12,7 +12,7 @@
       </button>
     </div>
 
-    <div v-for="(item, index) of astres" :key="index" class="block">
+    <div v-for="(item, index) of astres" :key="index" class="astres">
       <div class="grid grid-cols-2">
         <h2 class="item">{{ item.name }}</h2>
         <svg
@@ -95,7 +95,7 @@ export default {
   border-color: #fbbf24;
   border-width: thick;
 }
-.block {
+.astres {
   display: flex;
   background-color: #111827;
   color: #fbbf24;

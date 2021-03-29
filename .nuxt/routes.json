@@ -18,6 +18,12 @@
     "chunkName": "pages/listeAstre"
   },
   {
+    "name": "detail-astre",
+    "path": "/detail/:astre?",
+    "component": "D:\\\\Cours Mydigital\\\\VueJs\\\\NUXT_TP_NOTE_FINAL\\\\NUXT_FINAL_TP\\\\pages\\\\detail\\\\_astre.vue",
+    "chunkName": "pages/detail/_astre"
+  },
+  {
     "name": "index",
     "path": "/",
     "component": "D:\\\\Cours Mydigital\\\\VueJs\\\\NUXT_TP_NOTE_FINAL\\\\NUXT_FINAL_TP\\\\pages\\\\index.vue",

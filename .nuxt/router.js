@@ -7,6 +7,7 @@ import scrollBehavior from './router.scrollBehavior.js'
 const _2c622d22 = () => interopDefault(import('..\\pages\\details.vue' /* webpackChunkName: "pages/details" */))
 const _32d8abc8 = () => interopDefault(import('..\\pages\\favoris.vue' /* webpackChunkName: "pages/favoris" */))
 const _79a7e63e = () => interopDefault(import('..\\pages\\listeAstre.vue' /* webpackChunkName: "pages/listeAstre" */))
+const _4da95a52 = () => interopDefault(import('..\\pages\\detail\\_astre.vue' /* webpackChunkName: "pages/detail/_astre" */))
 const _46844db2 = () => interopDefault(import('..\\pages\\index.vue' /* webpackChunkName: "pages/index" */))
 
 const emptyFn = () => {}
@@ -32,6 +33,10 @@ export const routerOptions = {
     path: "/listeAstre",
     component: _79a7e63e,
     name: "listeAstre"
+  }, {
+    path: "/detail/:astre?",
+    component: _4da95a52,
+    name: "detail-astre"
   }, {
     path: "/",
     component: _46844db2,

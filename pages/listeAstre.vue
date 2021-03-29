@@ -104,6 +104,7 @@ export default {
 }
 .block {
   display: flex;
+  color: #fbbf24;
   background-color: #111827;
   margin: 10px;
   width: 200px;

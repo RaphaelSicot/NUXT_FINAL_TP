@@ -4,6 +4,7 @@
       <center>
         <h1>Informations sur {{ astre.name }}</h1>
       </center>
+
       <table>
         <thead>
           <tr>
@@ -72,6 +73,12 @@
               {{ astre.gravity }}
             </td>
           </tr>
+
+          <tr v-for="lune in astre.moons" :key="lune.moon">
+            <!-- <button @click="openMoon(lune.moon)">{{ lune.moon }}</button> -->
+
+            <nuxt-link :to="'detail/' + lune.moon">{{ lune.moon }}</nuxt-link>
+          </tr>
         </tbody>
       </table>
     </div>
@@ -86,18 +93,35 @@ export default {
   name: "details",
   data: function () {
     return {
-      astre: Object,
+      astre: {},
     };
   },
-  created() {
-    axios
-      .get("https://api.le-systeme-solaire.net/rest/bodies/")
-      .then((reponse) => {
-        this.astre = reponse.data.bodies.find(
-          (item) => item.id === this.$route.params.astre
-        );
-        console.log(this.astre);
-      });
+
+  async created() {
+    this.loadData();
+  },
+
+  methods: {
+    openMoon(luneId) {
+      this.$route.params.astre = luneId;
+      this.loadData();
+      this.$forceUpdate();
+    },
+
+    loadData() {
+      this.astre = { name: "" };
+
+      console.log(this.$route.params.astre);
+
+      axios
+        .get("https://api.le-systeme-solaire.net/rest/bodies/")
+        .then((reponse) => {
+          this.astre = reponse.data.bodies.find(
+            (item) => item.id == this.$route.params.astre
+          );
+        });
+      console.log(JSON.parse(JSON.stringify(this.astre)));
+    },
   },
 };
 </script>
