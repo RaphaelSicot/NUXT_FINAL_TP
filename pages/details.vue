@@ -75,8 +75,6 @@
           </tr>
 
           <tr v-for="lune in astre.moons" :key="lune.moon">
-            <!-- <button @click="openMoon(lune.moon)">{{ lune.moon }}</button> -->
-
             <nuxt-link :to="'detail/' + lune.moon">{{ lune.moon }}</nuxt-link>
           </tr>
         </tbody>
