@@ -3,28 +3,24 @@
     "name": "details",
     "path": "/details",
     "component": "D:\\\\Cours Mydigital\\\\VueJs\\\\NUXT_TP_NOTE_FINAL\\\\NUXT_FINAL_TP\\\\pages\\\\details.vue",
-    "chunkName": "pages/details",
-    "_name": "_2c622d22"
+    "chunkName": "pages/details"
   },
   {
     "name": "favoris",
     "path": "/favoris",
     "component": "D:\\\\Cours Mydigital\\\\VueJs\\\\NUXT_TP_NOTE_FINAL\\\\NUXT_FINAL_TP\\\\pages\\\\favoris.vue",
-    "chunkName": "pages/favoris",
-    "_name": "_32d8abc8"
+    "chunkName": "pages/favoris"
   },
   {
     "name": "listeAstre",
     "path": "/listeAstre",
     "component": "D:\\\\Cours Mydigital\\\\VueJs\\\\NUXT_TP_NOTE_FINAL\\\\NUXT_FINAL_TP\\\\pages\\\\listeAstre.vue",
-    "chunkName": "pages/listeAstre",
-    "_name": "_79a7e63e"
+    "chunkName": "pages/listeAstre"
   },
   {
     "name": "index",
     "path": "/",
     "component": "D:\\\\Cours Mydigital\\\\VueJs\\\\NUXT_TP_NOTE_FINAL\\\\NUXT_FINAL_TP\\\\pages\\\\index.vue",
-    "chunkName": "pages/index",
-    "_name": "_46844db2"
+    "chunkName": "pages/index"
   }
 ]

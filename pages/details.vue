@@ -1,7 +1,9 @@
 <template>
   <div class="details h-screen">
     <div>
-      <center><h1>Détails sur {{ astre.name }}</h1></center>
+      <center>
+        <h1>Informations sur {{ astre.name }}</h1>
+      </center>
       <table>
         <thead>
           <tr>
@@ -29,9 +31,7 @@
             </td>
           </tr>
           <tr>
-            <td>
-              Axe semis majeur
-            </td>
+            <td>Axe semis majeur</td>
             <td>
               {{ astre.semimajorAxis }}
             </td>
@@ -83,7 +83,7 @@ import axios from "axios";
 
 export default {
   layout: "defaut",
-  name: "Details",
+  name: "details",
   data: function () {
     return {
       astre: Object,

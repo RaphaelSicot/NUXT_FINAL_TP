@@ -1,20 +1,20 @@
 <template>
   <div class="favourite h-screen">
-    <div class="filter ml-10 mr-10 mb-5">
-      <button class="button" @click="displayAll">
+    <div class="filter">
+      <button class="button" @click="getAllAstres">
         <span>Tout</span>
       </button>
-      <button class="button" @click="displayMoon">
+      <button class="button" @click="getMoon">
         <span>Lune</span>
       </button>
-      <button class="button" @click="displayPlanet">
+      <button class="button" @click="getPlanet">
         <span>Planète</span>
       </button>
     </div>
 
     <div v-for="(item, index) of astres" :key="index" class="block">
       <div class="grid grid-cols-2">
-        <h2 class="font-bold text-xl">{{ item.name }}</h2>
+        <h2 class="item">{{ item.name }}</h2>
         <svg
           fill="currentColor"
           stroke="#fbbf24"
@@ -33,7 +33,7 @@
 <script>
 export default {
   layout: "defaut",
-  name: "Favourite",
+  name: "favoris",
   components: {},
   data: function () {
     return {
@@ -41,21 +41,22 @@ export default {
     };
   },
   methods: {
-    displayAll: function () {
+    getAllAstres: function () {
       this.astres = this.$store.state.favouriteList;
     },
-    displayMoon: function () {
+    getMoon: function () {
       this.astres = this.$store.state.favouriteList.filter(
         (astre) => !astre.isPlanet
       );
     },
-    displayPlanet: function () {
+    getPlanet: function () {
       this.astres = this.$store.state.favouriteList.filter(
         (astre) => astre.isPlanet
       );
     },
     removeFavourite: function (astre) {
       this.$store.commit("remove", astre);
+      this.$toast.error("Astre supprimé des favoris").goAway(3000);
     },
   },
   mounted() {
@@ -66,13 +67,11 @@ export default {
 
 <style>
 .favourite {
-  display: flex;
   padding-top: 16px;
   padding-bottom: 16px;
   background-color: #fbbf24;
   justify-content: center;
   color: #111827;
-  flex-wrap: wrap;
 }
 
 .filter {
