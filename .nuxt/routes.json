@@ -2,29 +2,29 @@
   {
     "name": "details",
     "path": "/details",
-    "component": "C:\\\\Ecole\\\\JS\\\\TPNOTE\\\\NUXT_TP\\\\pages\\\\details.vue",
+    "component": "D:\\\\Cours Mydigital\\\\VueJs\\\\NUXT_TP_NOTE_FINAL\\\\NUXT_FINAL_TP\\\\pages\\\\details.vue",
     "chunkName": "pages/details",
-    "_name": "_066d8a4c"
+    "_name": "_2c622d22"
   },
   {
     "name": "favoris",
     "path": "/favoris",
-    "component": "C:\\\\Ecole\\\\JS\\\\TPNOTE\\\\NUXT_TP\\\\pages\\\\favoris.vue",
+    "component": "D:\\\\Cours Mydigital\\\\VueJs\\\\NUXT_TP_NOTE_FINAL\\\\NUXT_FINAL_TP\\\\pages\\\\favoris.vue",
     "chunkName": "pages/favoris",
-    "_name": "_033fb980"
+    "_name": "_32d8abc8"
   },
   {
     "name": "listeAstre",
     "path": "/listeAstre",
-    "component": "C:\\\\Ecole\\\\JS\\\\TPNOTE\\\\NUXT_TP\\\\pages\\\\listeAstre.vue",
+    "component": "D:\\\\Cours Mydigital\\\\VueJs\\\\NUXT_TP_NOTE_FINAL\\\\NUXT_FINAL_TP\\\\pages\\\\listeAstre.vue",
     "chunkName": "pages/listeAstre",
-    "_name": "_fbc544f4"
+    "_name": "_79a7e63e"
   },
   {
     "name": "index",
     "path": "/",
-    "component": "C:\\\\Ecole\\\\JS\\\\TPNOTE\\\\NUXT_TP\\\\pages\\\\index.vue",
+    "component": "D:\\\\Cours Mydigital\\\\VueJs\\\\NUXT_TP_NOTE_FINAL\\\\NUXT_FINAL_TP\\\\pages\\\\index.vue",
     "chunkName": "pages/index",
-    "_name": "_0a43696a"
+    "_name": "_46844db2"
   }
 ]

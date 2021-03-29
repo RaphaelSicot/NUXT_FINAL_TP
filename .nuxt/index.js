@@ -13,12 +13,12 @@ import { createStore } from './store.js'
 
 /* Plugins */
 
-import nuxt_plugin_plugin_8c99896e from 'nuxt_plugin_plugin_8c99896e' // Source: .\\components\\plugin.js (mode: 'all')
-import nuxt_plugin_pluginclient_7303cf7f from 'nuxt_plugin_pluginclient_7303cf7f' // Source: .\\content\\plugin.client.js (mode: 'client')
-import nuxt_plugin_pluginserver_4e857df2 from 'nuxt_plugin_pluginserver_4e857df2' // Source: .\\content\\plugin.server.js (mode: 'server')
-import nuxt_plugin_workbox_0a397f08 from 'nuxt_plugin_workbox_0a397f08' // Source: .\\workbox.js (mode: 'client')
-import nuxt_plugin_metaplugin_394e28f0 from 'nuxt_plugin_metaplugin_394e28f0' // Source: .\\pwa\\meta.plugin.js (mode: 'all')
-import nuxt_plugin_axios_668ad628 from 'nuxt_plugin_axios_668ad628' // Source: .\\axios.js (mode: 'all')
+import nuxt_plugin_plugin_985b3466 from 'nuxt_plugin_plugin_985b3466' // Source: .\\components\\plugin.js (mode: 'all')
+import nuxt_plugin_pluginclient_c67bcffa from 'nuxt_plugin_pluginclient_c67bcffa' // Source: .\\content\\plugin.client.js (mode: 'client')
+import nuxt_plugin_pluginserver_027b898b from 'nuxt_plugin_pluginserver_027b898b' // Source: .\\content\\plugin.server.js (mode: 'server')
+import nuxt_plugin_workbox_334f3e8c from 'nuxt_plugin_workbox_334f3e8c' // Source: .\\workbox.js (mode: 'client')
+import nuxt_plugin_metaplugin_acee31e8 from 'nuxt_plugin_metaplugin_acee31e8' // Source: .\\pwa\\meta.plugin.js (mode: 'all')
+import nuxt_plugin_axios_6efb3520 from 'nuxt_plugin_axios_6efb3520' // Source: .\\axios.js (mode: 'all')
 
 // Component: <ClientOnly>
 Vue.component(ClientOnly.name, ClientOnly)
@@ -82,7 +82,7 @@ async function createApp(ssrContext, config = {}) {
   // here we inject the router and store to all child components,
   // making them available everywhere as `this.$router` and `this.$store`.
   const app = {
-    head: {"title":"Astronimo","meta":[{"charset":"utf-8"},{"name":"viewport","content":"width=device-width, initial-scale=1"},{"hid":"description","name":"description","content":""}],"link":[{"rel":"icon","type":"image\u002Fx-icon","href":"\u002Ffavicon.ico"}],"style":[],"script":[]},
+    head: {"meta":[],"link":[],"style":[],"script":[]},
 
     store,
     router,
@@ -211,28 +211,28 @@ async function createApp(ssrContext, config = {}) {
   }
   // Plugin execution
 
-  if (typeof nuxt_plugin_plugin_8c99896e === 'function') {
-    await nuxt_plugin_plugin_8c99896e(app.context, inject)
+  if (typeof nuxt_plugin_plugin_985b3466 === 'function') {
+    await nuxt_plugin_plugin_985b3466(app.context, inject)
   }
 
-  if (process.client && typeof nuxt_plugin_pluginclient_7303cf7f === 'function') {
-    await nuxt_plugin_pluginclient_7303cf7f(app.context, inject)
+  if (process.client && typeof nuxt_plugin_pluginclient_c67bcffa === 'function') {
+    await nuxt_plugin_pluginclient_c67bcffa(app.context, inject)
   }
 
-  if (process.server && typeof nuxt_plugin_pluginserver_4e857df2 === 'function') {
-    await nuxt_plugin_pluginserver_4e857df2(app.context, inject)
+  if (process.server && typeof nuxt_plugin_pluginserver_027b898b === 'function') {
+    await nuxt_plugin_pluginserver_027b898b(app.context, inject)
   }
 
-  if (process.client && typeof nuxt_plugin_workbox_0a397f08 === 'function') {
-    await nuxt_plugin_workbox_0a397f08(app.context, inject)
+  if (process.client && typeof nuxt_plugin_workbox_334f3e8c === 'function') {
+    await nuxt_plugin_workbox_334f3e8c(app.context, inject)
   }
 
-  if (typeof nuxt_plugin_metaplugin_394e28f0 === 'function') {
-    await nuxt_plugin_metaplugin_394e28f0(app.context, inject)
+  if (typeof nuxt_plugin_metaplugin_acee31e8 === 'function') {
+    await nuxt_plugin_metaplugin_acee31e8(app.context, inject)
   }
 
-  if (typeof nuxt_plugin_axios_668ad628 === 'function') {
-    await nuxt_plugin_axios_668ad628(app.context, inject)
+  if (typeof nuxt_plugin_axios_6efb3520 === 'function') {
+    await nuxt_plugin_axios_6efb3520(app.context, inject)
   }
 
   // Lock enablePreview in context

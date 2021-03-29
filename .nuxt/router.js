@@ -4,10 +4,10 @@ import { normalizeURL, decode } from 'ufo'
 import { interopDefault } from './utils'
 import scrollBehavior from './router.scrollBehavior.js'
 
-const _066d8a4c = () => interopDefault(import('..\\pages\\details.vue' /* webpackChunkName: "pages/details" */))
-const _033fb980 = () => interopDefault(import('..\\pages\\favoris.vue' /* webpackChunkName: "pages/favoris" */))
-const _fbc544f4 = () => interopDefault(import('..\\pages\\listeAstre.vue' /* webpackChunkName: "pages/listeAstre" */))
-const _0a43696a = () => interopDefault(import('..\\pages\\index.vue' /* webpackChunkName: "pages/index" */))
+const _2c622d22 = () => interopDefault(import('..\\pages\\details.vue' /* webpackChunkName: "pages/details" */))
+const _32d8abc8 = () => interopDefault(import('..\\pages\\favoris.vue' /* webpackChunkName: "pages/favoris" */))
+const _79a7e63e = () => interopDefault(import('..\\pages\\listeAstre.vue' /* webpackChunkName: "pages/listeAstre" */))
+const _46844db2 = () => interopDefault(import('..\\pages\\index.vue' /* webpackChunkName: "pages/index" */))
 
 const emptyFn = () => {}
 
@@ -22,19 +22,19 @@ export const routerOptions = {
 
   routes: [{
     path: "/details",
-    component: _066d8a4c,
+    component: _2c622d22,
     name: "details"
   }, {
     path: "/favoris",
-    component: _033fb980,
+    component: _32d8abc8,
     name: "favoris"
   }, {
     path: "/listeAstre",
-    component: _fbc544f4,
+    component: _79a7e63e,
     name: "listeAstre"
   }, {
     path: "/",
-    component: _0a43696a,
+    component: _46844db2,
     name: "index"
   }],
 

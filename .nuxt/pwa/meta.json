@@ -1,5 +1,5 @@
 {
-  "title": "Astronimo",
+  "title": "TP_NUXT",
   "meta": [
     {
       "hid": "charset",
@@ -18,12 +18,7 @@
     {
       "hid": "apple-mobile-web-app-title",
       "name": "apple-mobile-web-app-title",
-      "content": "Astronimo"
-    },
-    {
-      "hid": "description",
-      "name": "description",
-      "content": "Astronimo est un projet destiné à l'utilisation du Framework Vue JS dans le cadre de ma formation au MBA développeur full-stack"
+      "content": "TP_NUXT"
     },
     {
       "hid": "og:type",
@@ -35,19 +30,13 @@
       "hid": "og:title",
       "name": "og:title",
       "property": "og:title",
-      "content": "Astronimo"
+      "content": "TP_NUXT"
     },
     {
       "hid": "og:site_name",
       "name": "og:site_name",
       "property": "og:site_name",
-      "content": "Astronimo"
-    },
-    {
-      "hid": "og:description",
-      "name": "og:description",
-      "property": "og:description",
-      "content": "Astronimo est un projet destiné à l'utilisation du Framework Vue JS dans le cadre de ma formation au MBA développeur full-stack"
+      "content": "TP_NUXT"
     }
   ],
   "link": [
@@ -58,7 +47,7 @@
     },
     {
       "rel": "manifest",
-      "href": "/_nuxt/manifest.ad51402f.json",
+      "href": "/_nuxt/manifest.1b59ca8f.json",
       "hid": "manifest"
     }
   ],
